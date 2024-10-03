@@ -3,7 +3,6 @@
 import React, { useEffect } from "react";
 import styles from "./Projects.module.css";
 import Slider from "../../Slider/Slider";
-import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
 import { changeChosenImage, setChosenProject } from "@/redux/projectsSlice";
 
