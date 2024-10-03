@@ -1,0 +1,43 @@
+.slider {
+  width: 80%;
+  height: var(--height);
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10% 90%,
+    transparent
+  );
+}
+
+.list {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure items don’t wrap */
+  position: relative;
+  animation: scroll 20s linear infinite; /* Continuous scrolling */
+  gap: 20px;
+}
+
+.item {
+  width: var(--width);
+  height: var(--height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: var(--bg);
+  color: var(--color);
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--width) * var(--quantity)));
+  }
+}
+

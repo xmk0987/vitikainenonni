@@ -1,0 +1,255 @@
+.projects {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 25px 0;
+}
+
+.mainContent,
+.changeProject {
+  z-index: 3;
+}
+
+.mainContentHeader h1 {
+  font-size: 50px !important;
+}
+
+.mainContentHeader a {
+  font-size: 15px !important;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.mainContentHeader a:hover {
+  opacity: 0.7;
+}
+
+.todoGroups {
+  background: var(--todo-linear);
+  color: black;
+}
+
+.todoGroups h1,
+.todoGroups a {
+  color: var(--todo-accent);
+}
+
+.todoGroups .changeProject {
+  background-color: var(--accent);
+  color: white;
+}
+
+.todoGroups .mainContent .projectInfo {
+  color: black;
+}
+
+/* FASTSPOTS */
+
+.fastspots {
+  background: var(--fastspots-linear);
+  color: black;
+}
+
+.fastspots h1,
+.fastspots a {
+  color: white;
+}
+
+.fastspots .changeProject {
+  background-color: var(--fastspots-accent);
+  color: white;
+}
+
+.fastspots .mainContent .projectInfo {
+  color: white;
+}
+
+/* Get Drunk */
+
+.getDrunk {
+  background: var(--getDrunk-background);
+  color: black;
+}
+
+.getDrunk h1 {
+  color: var(--getDrunk-accent-blue);
+}
+
+.getDrunk a {
+  color: black;
+}
+
+.getDrunk .changeProject {
+  background-color: var(--getDrunk-accent-yellow);
+  color: var(--getDrunk-accent-blue);
+}
+
+.getDrunk .mainContent .projectInfo {
+  color: black;
+}
+
+.changeProject {
+  position: absolute;
+  padding: 10px 0;
+  top: 80px;
+  width: 150px;
+  box-shadow: var(--box-shadow);
+  font-weight: 900;
+  z-index: 1200;
+}
+
+.changeProject:nth-of-type(1) {
+  left: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.changeProject:nth-of-type(2) {
+  right: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.mainContent {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.mainContentHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainContentHeader h1 {
+  font-size: var(--font-size-xl);
+}
+
+.mainContentImage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContentImage {
+  max-width: 70%;
+  max-height: 50%;
+}
+
+.mainContentImage button {
+  position: absolute;
+}
+
+.mainContentImage button:nth-of-type(1) {
+  top: 50%;
+  left: 0;
+}
+
+.mainContentImage button:nth-of-type(2) {
+  top: 50%;
+  right: 0;
+}
+
+.mainContentImage img {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  max-width: 70%;
+  border: 1px solid black;
+}
+
+.projectInfo {
+  width: 70%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.todoGroupsArt {
+  position: absolute;
+  height: 80%;
+  width: auto;
+  max-height: 700px;
+}
+
+.todoGroupsArt:nth-of-type(1) {
+  left: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.todoGroupsArt:nth-of-type(2) {
+  right: 0;
+  bottom: 0;
+  transform: translateX(50%);
+}
+
+.otherProjects {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .changeProject {
+    width: 120px;
+  }
+
+  .todoGroupsArt {
+    max-height: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .todoGroupsArt {
+    display: none;
+  }
+
+  .mainContent {
+    margin-top: 50px;
+  }
+  .mainContentImage {
+    max-width: 100%;
+  }
+
+  .projectInfo {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .todoGroupsArt {
+    position: absolute;
+    height: 50%;
+    width: auto;
+  }
+}

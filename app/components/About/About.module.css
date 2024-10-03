@@ -1,0 +1,133 @@
+.about {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.changePage {
+  position: absolute;
+  padding: 10px 0;
+  top: 80px;
+  width: 150px;
+  box-shadow: var(--box-shadow);
+  font-weight: 900;
+  background-color: var(--accent);
+}
+
+.changePage:nth-of-type(1) {
+  left: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.changePage:nth-of-type(2) {
+  right: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.mainContent {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.mainContentHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mainContentHeader p {
+  width: 70%;
+  text-align: center;
+}
+
+.mainContentHeader h1 {
+  font-size: var(--font-size-xl);
+}
+
+.divider {
+  height: 1px;
+  width: 70%;
+  background-color: white;
+}
+
+.items {
+  width: 70%;
+  text-align: center;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-height: 100%;
+  padding: 0 0 0 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.itemHeader {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.itemHeader h3 {
+  font-size: var(--font-size-m);
+  letter-spacing: 0.5px;
+  text-align: start;
+}
+
+.itemHeader p {
+  text-align: end;
+}
+.itemContent {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.itemContent p:nth-of-type(1) {
+  font-size: var(--font-size-ms);
+}
+
+@media only screen and (max-width: 600px) {
+  .changePage {
+    width: auto;
+    padding: 10px 10px;
+  }
+
+  .mainContent {
+    margin-top: 125px;
+    padding: 20px;
+  }
+
+  .mainContentHeader p {
+    width: 100%;
+  }
+
+  .mainContentHeader h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  .items {
+    width: 100%;
+  }
+}
