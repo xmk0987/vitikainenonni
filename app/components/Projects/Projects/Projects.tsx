@@ -6,8 +6,7 @@ import Slider from "../../Slider/Slider";
 import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
 import { changeChosenImage, setChosenProject } from "@/redux/projectsSlice";
-import duck from "@/public/assets/images/duck.png";
-import capy from "@/public/assets/images/capy.png";
+
 import BackIcon from "@/public/assets/icons/BackIcon";
 import NextIcon from "@/public/assets/icons/NextIcon";
 import GithubIcon from "@/public/assets/icons/GithubIcon";
@@ -92,17 +91,17 @@ const Projects = () => {
             </a>
           </div>
           <div className={styles.mainContentImage}>
+            <button onClick={() => changeImage("previous")}>
+              <BackIcon
+                color={chosenProject !== "fastspots" ? "black" : "white"}
+              />
+            </button>
             <Image
               src={chosenImage}
               alt={projects[chosenProject].name}
               height={700}
               width={1000}
             />
-            <button onClick={() => changeImage("previous")}>
-              <BackIcon
-                color={chosenProject !== "fastspots" ? "black" : "white"}
-              />
-            </button>
             <button onClick={() => changeImage("next")}>
               <NextIcon
                 color={chosenProject !== "fastspots" ? "black" : "white"}
@@ -124,7 +123,7 @@ const Projects = () => {
         <>
           <Image
             className={styles.todoGroupsArt}
-            src={duck}
+            src={"/assets/images/duck.png"}
             alt="Duck"
             layout="responsive"
             height={700}
@@ -132,7 +131,7 @@ const Projects = () => {
           />
           <Image
             className={styles.todoGroupsArt}
-            src={capy}
+            src={"/assets/images/capy.png"}
             alt="Capybara"
             layout="responsive"
             height={700}

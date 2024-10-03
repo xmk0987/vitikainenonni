@@ -9,6 +9,7 @@
     black 10% 90%,
     transparent
   );
+  max-width: 800px;
 }
 
 .list {
@@ -40,4 +41,3 @@
     transform: translateX(calc(-1 * var(--width) * var(--quantity)));
   }
 }
-
