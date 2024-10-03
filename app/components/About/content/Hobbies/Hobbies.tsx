@@ -7,22 +7,22 @@ const Hobbies = () => {
       <div className={styles.mainContentHeader}>
         <h1>IN MY FREE TIME</h1>
         <p>
-          I stay active in my free time with a variety of sports. I'm currently
-          training for my first marathon, set for next May at the Helsinki
-          Marathon. I also enjoy Muay Thai, calisthenics, and hitting the gym
-          regularly. Every now and then, I play ball games with friends to keep
-          things fun and social.
+          I stay active in my free time with a variety of sports. I&#39;m
+          currently training for my first marathon, set for next May at the
+          Helsinki Marathon. I also enjoy Muay Thai, calisthenics, and hitting
+          the gym regularly. Every now and then, I play ball games with friends
+          to keep things fun and social.
         </p>
         <p>
-          Music is another passion of mine—I'm learning to play both the guitar
-          and piano, and it's been a rewarding challenge.
+          Music is another passion of mine—I&#39;m learning to play both the
+          guitar and piano, and it&#39;s been a rewarding challenge.
         </p>
         <p>
-          When I'm not being active, I'm often diving into books, particularly
-          those on psychology and history. I also dedicate a large portion of my
-          free time to coding projects, constantly pushing myself to learn more
-          complex topics. And of course, I always make time to catch up with
-          friends.
+          When I&#39;m not being active, I&#39;m often diving into books,
+          particularly those on psychology and history. I also dedicate a large
+          portion of my free time to coding projects, constantly pushing myself
+          to learn more complex topics. And of course, I always make time to
+          catch up with friends.
         </p>
       </div>
     </div>

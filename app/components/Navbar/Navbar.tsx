@@ -2,9 +2,10 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 const Navbar = () => {
-  const { chosenProject } = useSelector((state: any) => state.projects);
+  const { chosenProject } = useSelector((state: RootState) => state.projects);
 
   const [activeSection, setActiveSection] = useState("home");
 

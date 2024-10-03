@@ -2,12 +2,13 @@
 import React from "react";
 import styles from "./Home.module.css";
 import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 import GithubIcon from "@/public/assets/icons/GithubIcon";
 import LinkedInIcon from "@/public/assets/icons/LinkedInIcon";
 import EmailIcon from "@/public/assets/icons/EmailIcon";
 
 const Home = () => {
-  const { chosenProject } = useSelector((state: any) => state.projects);
+  const { chosenProject } = useSelector((state: RootState) => state.projects);
   return (
     <section className={styles.container} id="home">
       <div className={styles.welcome}>

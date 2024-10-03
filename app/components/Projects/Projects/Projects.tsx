@@ -11,6 +11,7 @@ import capy from "@/public/assets/images/capy.png";
 import BackIcon from "@/public/assets/icons/BackIcon";
 import NextIcon from "@/public/assets/icons/NextIcon";
 import GithubIcon from "@/public/assets/icons/GithubIcon";
+import { RootState } from "@/redux/store";
 
 type SliderStylesType = {
   [key: string]: {
@@ -39,7 +40,7 @@ const Projects = () => {
 
   // Accessing the chosenProject and its details from the Redux store
   const { projects, chosenProject, chosenImage } = useSelector(
-    (state: any) => state.projects
+    (state: RootState) => state.projects
   );
 
   const projectKeys = Object.keys(projects);
