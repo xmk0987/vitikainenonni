@@ -101,7 +101,7 @@ button:hover {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
+/* Trying to force redeploy*/
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
