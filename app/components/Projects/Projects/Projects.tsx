@@ -11,6 +11,8 @@ import BackIcon from "@/public/assets/icons/BackIcon";
 import NextIcon from "@/public/assets/icons/NextIcon";
 import GithubIcon from "@/public/assets/icons/GithubIcon";
 import { RootState } from "@/redux/store";
+import duck from "@/public/assets/images/duck.png";
+import capy from "@/public/assets/images/capy.png";
 
 type SliderStylesType = {
   [key: string]: {
@@ -96,12 +98,13 @@ const Projects = () => {
                 color={chosenProject !== "fastspots" ? "black" : "white"}
               />
             </button>
-            <Image
+            {/*            <Image
               src={chosenImage}
               alt={projects[chosenProject].name}
               height={700}
               width={1000}
-            />
+            /> */}
+            <img src={chosenImage} alt={projects[chosenProject].name} />
             <button onClick={() => changeImage("next")}>
               <NextIcon
                 color={chosenProject !== "fastspots" ? "black" : "white"}
@@ -120,10 +123,10 @@ const Projects = () => {
       </div>
 
       {chosenProject === "todoGroups" && (
-        <>
+        /*         <>
           <Image
             className={styles.todoGroupsArt}
-            src={"/assets/images/duck.png"}
+            src={duck}
             alt="Duck"
             layout="responsive"
             height={700}
@@ -131,12 +134,15 @@ const Projects = () => {
           />
           <Image
             className={styles.todoGroupsArt}
-            src={"/assets/images/capy.png"}
+            src={capy}
             alt="Capybara"
             layout="responsive"
             height={700}
             width={700}
           />
+        </> */ <>
+          <img className={styles.todoGroupsArt} src={duck.src} alt="Duck" />
+          <img className={styles.todoGroupsArt} src={capy.src} alt="Capybara" />
         </>
       )}
       <a

@@ -153,10 +153,10 @@
 }
 
 .mainContentImage img {
-  width: auto;
+  width: 50%;
   height: auto;
   border-radius: 10px;
-  max-width: 60%;
+  max-width: 1300px;
   border: 1px solid black;
 }
 
