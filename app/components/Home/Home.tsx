@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styles from "./Home.module.css";
 import { useSelector } from "react-redux";
 import GithubIcon from "@/public/assets/icons/GithubIcon";

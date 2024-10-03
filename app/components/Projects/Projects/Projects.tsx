@@ -121,8 +121,22 @@ const Projects = () => {
 
       {chosenProject === "todoGroups" && (
         <>
-          <img className={styles.todoGroupsArt} src={duck.src} alt="" />
-          <img src={capy.src} alt="" className={styles.todoGroupsArt} />
+          <Image
+            className={styles.todoGroupsArt}
+            src={duck}
+            alt="Duck"
+            layout="responsive"
+            height={700}
+            width={700}
+          />
+          <Image
+            className={styles.todoGroupsArt}
+            src={capy}
+            alt="Capybara"
+            layout="responsive"
+            height={700}
+            width={700}
+          />
         </>
       )}
       <a

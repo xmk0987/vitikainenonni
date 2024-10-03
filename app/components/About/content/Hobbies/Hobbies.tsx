@@ -14,11 +14,11 @@ const Hobbies = () => {
           things fun and social.
         </p>
         <p>
-          Music is another passion of mine—I’m learning to play both the guitar
-          and piano, and it’s been a rewarding challenge.
+          Music is another passion of mine—I'm learning to play both the guitar
+          and piano, and it's been a rewarding challenge.
         </p>
         <p>
-          When I’m not being active, I’m often diving into books, particularly
+          When I'm not being active, I'm often diving into books, particularly
           those on psychology and history. I also dedicate a large portion of my
           free time to coding projects, constantly pushing myself to learn more
           complex topics. And of course, I always make time to catch up with
