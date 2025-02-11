@@ -234,8 +234,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .mainContentHeader h1 {
+    font-size: 30px !important;
+    text-align: center;
+  }
+
   .changeProject {
-    top: 20%;
+    top: 80px;
   }
 
   .todoGroupsArt {
