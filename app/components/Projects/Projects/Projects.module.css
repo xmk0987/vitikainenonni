@@ -230,6 +230,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .changeProject {
+    top: 20%;
+  }
+
   .todoGroupsArt {
     display: none;
   }
@@ -238,6 +242,12 @@
     margin-top: 50px;
   }
   .mainContentImage {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .mainContentImage img {
+    width: 90%;
     max-width: 100%;
   }
 
