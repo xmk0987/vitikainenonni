@@ -108,6 +108,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .mainContentHeader h1 {
+    font-size: 35px !important;
+  }
   .changePage {
     top: 20%;
   }
