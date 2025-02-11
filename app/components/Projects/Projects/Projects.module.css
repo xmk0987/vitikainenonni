@@ -108,6 +108,10 @@
   color: white;
 }
 
+.moneySpendTracker h1 {
+  text-align: center;
+}
+
 .moneySpendTracker h1,
 .moneySpendTracker a {
   color: #f7ebff;
