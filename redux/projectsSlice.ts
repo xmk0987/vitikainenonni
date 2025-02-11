@@ -38,6 +38,18 @@ const initialState: ProjectsState = {
         "/assets/images/todoGroups/todo3.png",
       ],
     },
+    moneySpendTracker: {
+      name: "Money Spend Tracker",
+      url: "https://www.moneyspendtracker.com/",
+      description:
+        "A web application to track and visualize your expenses by uploading bank statements. Easily upload your bank statements and get a smart dashboard to track your expenses, spending, and budget insights.",
+      technologies: ["REACT", "TYPESCRIPT", "NEXT.js", "REDIS"],
+      images: [
+        "/assets/images/moneySpend/upload.png",
+        "/assets/images/moneySpend/dashboard.png",
+        "/assets/images/moneySpend/transactions.png",
+      ],
+    },
     fastspots: {
       name: "FASTSPOTS",
       url: "https://www.fastspots.net",

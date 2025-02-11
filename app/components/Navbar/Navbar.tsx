@@ -52,12 +52,11 @@ const Navbar = () => {
     }
   };
 
-  console.log("Active Section:", activeSection);
-
   return (
     <nav
       className={`${styles.container} ${
-        chosenProject !== "fastspots" && activeSection === "projects"
+        chosenProject !== "fastspots" &&
+        (chosenProject !== "moneySpendTracker" && activeSection === "projects")
           ? styles.navbarProjects
           : ""
       }`}

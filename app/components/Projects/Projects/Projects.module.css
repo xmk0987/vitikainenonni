@@ -102,6 +102,30 @@
   color: black;
 }
 
+/* Money Spend Tracker */
+.moneySpendTracker {
+  background: var(--mst-bg);
+  color: white;
+}
+
+.moneySpendTracker h1,
+.moneySpendTracker a {
+  color: #f7ebff;
+}
+
+.moneySpendTracker .changeProject {
+  background-color: white;
+  color: black;
+}
+
+.moneySpendTracker .mainContent .projectInfo {
+  color: #f7ebff;
+}
+
+.moneySpendTracker .mainContentImage img {
+  box-shadow: 0px 1.8px 12px -4px white;
+}
+
 .changeProject {
   position: absolute;
   padding: 10px 0;

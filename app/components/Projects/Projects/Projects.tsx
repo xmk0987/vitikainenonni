@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./Projects.module.css";
 import Slider from "../../Slider/Slider";
 import { useSelector, useDispatch } from "react-redux";
@@ -25,6 +25,10 @@ const sliderStyles: SliderStylesType = {
     bg: "var(--accent)",
     color: "white",
   },
+  moneySpendTracker: {
+    bg: "white",
+    color: "black",
+  },
   getDrunk: {
     bg: "var(--getDrunk-accent-yellow)",
     color: "var(--getDrunk-accent-blue)",
@@ -38,22 +42,17 @@ const sliderStyles: SliderStylesType = {
 const Projects = () => {
   const dispatch = useDispatch();
 
-  // Accessing the chosenProject and its details from the Redux store
   const { projects, chosenProject, chosenImage } = useSelector(
     (state: RootState) => state.projects
   );
 
   const projectKeys = Object.keys(projects);
 
-  useEffect(() => {
-    // This useEffect is no longer necessary since chosenImage updates with Redux state
-  }, [chosenProject]);
-
   // Calculate previous and next project keys
   const currentIndex = projectKeys.indexOf(chosenProject);
   const prevIndex =
-    (currentIndex - 1 + projectKeys.length) % projectKeys.length; // Get the previous index, wrapping around
-  const nextIndex = (currentIndex + 1) % projectKeys.length; // Get the next index, wrapping around
+    (currentIndex - 1 + projectKeys.length) % projectKeys.length;
+  const nextIndex = (currentIndex + 1) % projectKeys.length;
 
   const handleProjectChange = (newIndex: number) => {
     dispatch(setChosenProject(projectKeys[newIndex]));
@@ -70,6 +69,10 @@ const Projects = () => {
           chosenProject === "todoGroups" ? styles.todoGroups : null
         } ${chosenProject === "fastspots" ? styles.fastspots : null} ${
           chosenProject === "getDrunk" ? styles.getDrunk : null
+        } ${
+          chosenProject === "moneySpendTracker"
+            ? styles.moneySpendTracker
+            : null
         }`}
       >
         <button
@@ -94,19 +97,21 @@ const Projects = () => {
           <div className={styles.mainContentImage}>
             <button onClick={() => changeImage("previous")}>
               <BackIcon
-                color={chosenProject !== "fastspots" ? "black" : "white"}
+                color={
+                  !["fastspots", "moneySpendTracker"].includes(chosenProject)
+                    ? "black"
+                    : "white"
+                }
               />
             </button>
-            {/*            <Image
-              src={chosenImage}
-              alt={projects[chosenProject].name}
-              height={700}
-              width={1000}
-            /> */}
             <img src={chosenImage} alt={projects[chosenProject].name} />
             <button onClick={() => changeImage("next")}>
               <NextIcon
-                color={chosenProject !== "fastspots" ? "black" : "white"}
+                color={
+                  !["fastspots", "moneySpendTracker"].includes(chosenProject)
+                    ? "black"
+                    : "white"
+                }
               />
             </button>
           </div>
@@ -122,24 +127,7 @@ const Projects = () => {
       </div>
 
       {chosenProject === "todoGroups" && (
-        /*         <>
-          <Image
-            className={styles.todoGroupsArt}
-            src={duck}
-            alt="Duck"
-            layout="responsive"
-            height={700}
-            width={700}
-          />
-          <Image
-            className={styles.todoGroupsArt}
-            src={capy}
-            alt="Capybara"
-            layout="responsive"
-            height={700}
-            width={700}
-          />
-        </> */ <>
+        <>
           <img className={styles.todoGroupsArt} src={duck.src} alt="Duck" />
           <img className={styles.todoGroupsArt} src={capy.src} alt="Capybara" />
         </>

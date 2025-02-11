@@ -20,6 +20,8 @@
     white 100%
   );
 
+  /* Money Spend */
+  --mst-bg: radial-gradient(#3829be 0%, #1a1358 100%);
   /* FASTSPOTS */
   --fastspots-background: #131313;
   --fastspots-accent: #c51f21;
