@@ -3,6 +3,8 @@ import styles from "./About.module.css";
 import Work from "./content/Work/Work";
 import Education from "./content/Education/Education";
 import Hobbies from "./content/Hobbies/Hobbies";
+import BackIcon from "@/public/assets/icons/BackIcon";
+import NextIcon from "@/public/assets/icons/NextIcon";
 
 const About = () => {
   const sections = ["work", "education", "hobbies"];
@@ -32,21 +34,13 @@ const About = () => {
         className={styles.changePage}
         onClick={() => handleSectionChange("previous")}
       >
-        {getPreviousSection() === "work"
-          ? "Work Experience"
-          : getPreviousSection() === "education"
-          ? "Education"
-          : "Free time"}
+        <BackIcon />
       </button>
       <button
         className={styles.changePage}
         onClick={() => handleSectionChange("next")}
       >
-        {getNextSection() === "work"
-          ? "Work Experience"
-          : getNextSection() === "education"
-          ? "Education"
-          : "Free time"}
+        <NextIcon />
       </button>
 
       {activeSection === "work" && <Work />}

@@ -66,6 +66,10 @@
   background-color: var(--getDrunk-background);
 }
 
+.getMoneySpend {
+  background: #1a1358;
+}
+
 .contact {
   margin-top: 20px;
   display: inline-flex;

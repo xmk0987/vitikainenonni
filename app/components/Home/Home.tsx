@@ -42,6 +42,8 @@ const Home = () => {
           chosenProject === "todoGroups" ? styles.todoGroups : null
         } ${chosenProject === "fastspots" ? styles.fastspots : null} ${
           chosenProject === "getDrunk" ? styles.getDrunk : null
+        } ${
+          chosenProject === "moneySpendTracker" ? styles.getMoneySpend : null
         }`}
       ></div>
     </section>

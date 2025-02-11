@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 type Project = {
   name: string;
-  url: string;
+  url?: string;
   description: string;
   technologies: string[];
   images: string[];
@@ -52,9 +52,8 @@ const initialState: ProjectsState = {
     },
     fastspots: {
       name: "FASTSPOTS",
-      url: "https://www.fastspots.net",
       description:
-        "A third party web app using the Spotify API. User can create playlists faster then with Spotify and see their top tracks and artists. Premium users can also control the music player from this application.",
+        "A third party web app using the Spotify API. User can create playlists faster then with Spotify and see their top tracks and artists. Premium users can also control the music player from this application. Currently not usable for other users due to Spotify API restrictions on the player.",
       technologies: ["NEXTJS", "TS", "OAUTH", "SPOTIFY API", "REDUX", "REACT"],
       images: [
         "/assets/images/fastspots/fastspots1.png",

@@ -128,12 +128,13 @@
 
 .changeProject {
   position: absolute;
-  padding: 10px 0;
-  top: 80px;
-  width: 150px;
+  padding: 5px;
+  top: 50%;
+  transform: translateY(-50%);
   box-shadow: var(--box-shadow);
-  font-weight: 900;
   z-index: 1200;
+  display: flex;
+  justify-content: center;
 }
 
 .changeProject:nth-of-type(1) {
