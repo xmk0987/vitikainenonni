@@ -224,10 +224,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .changeProject {
-    width: 120px;
-  }
-
   .todoGroupsArt {
     max-height: 70%;
   }
