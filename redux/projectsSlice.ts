@@ -62,7 +62,7 @@ const initialState: ProjectsState = {
     },
     getDrunk: {
       name: "CARD GAMES",
-      url: "https://getdrunk-1.onrender.com",
+      url: "https://cardgames-7t5r.onrender.com/",
       description:
         "A fun web app to play classic party card games and some other smaller party games. No deck? No problem! Create lobbies, invite friends play with your phones online. ",
       technologies: ["WEBSOCKET", "NODEJS", "TS", "JS", "REACT", "EXPRESS"],

@@ -56,7 +56,8 @@ const Navbar = () => {
     <nav
       className={`${styles.container} ${
         chosenProject !== "fastspots" &&
-        (chosenProject !== "moneySpendTracker" && activeSection === "projects")
+        chosenProject !== "moneySpendTracker" &&
+        activeSection === "projects"
           ? styles.navbarProjects
           : ""
       }`}
@@ -75,14 +76,6 @@ const Navbar = () => {
         </a>
         <span
           className={`${activeSection === "projects" ? styles.showSpan : ""}`}
-        ></span>
-      </div>
-      <div>
-        <a href="#about" onClick={(e) => handleScroll(e, "about")}>
-          ABOUT
-        </a>
-        <span
-          className={`${activeSection === "about" ? styles.showSpan : ""}`}
         ></span>
       </div>
     </nav>

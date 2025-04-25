@@ -5,7 +5,6 @@ import Projects from "./components/Projects/Projects/Projects";
 import styles from "./EPortfolio.module.css";
 import { Provider } from "react-redux";
 import store from "@/redux/store";
-import About from "./components/About/About";
 
 export default function EPortfolio() {
   return (
@@ -16,7 +15,6 @@ export default function EPortfolio() {
           <main>
             <Home />
             <Projects />
-            <About />
           </main>
         </div>
       </Provider>
